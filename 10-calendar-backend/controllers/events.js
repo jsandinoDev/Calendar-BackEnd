@@ -21,7 +21,7 @@ const createEvent = async (req, res = response) => {
         savedEvent.user = req.uid;
         const resp = await savedEvent.save();
 
-        res.json({
+        res.status(200).json({
             ok: true,
             event: resp
         })

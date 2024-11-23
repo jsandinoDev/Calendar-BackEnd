@@ -2,7 +2,7 @@
 const {SchemaType, model, Schema} = require('mongoose');
 
 // const Cat = mongoose.model('Cat', { name: String });
-
+ 
 const UserSchema = Schema({
     name: {
         type:String,
